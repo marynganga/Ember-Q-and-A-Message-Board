@@ -1,0 +1,15 @@
+{
+	"questions": [
+		{
+			"author": "James Jones",
+			"content" : "How do you generate a model?",
+			"notes": "I'm new to Ember, so answer in simple terms."
+		},
+		{
+			"author": "Mary ",
+			"content" : "How do you generate a route?",
+			"notes": "I'm using the ember cli v2.15.1."
+		}
+
+	]
+}

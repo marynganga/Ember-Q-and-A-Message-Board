@@ -3,9 +3,8 @@
 		<h1>Ember Q&A Message Board</h1>
 		<nav class="well">
 			<ul>
-				<li>Home</li>
-				<li>About</li>
-				<li>Contact</li>
+				{{#link-to 'index'}}<li>Home</li>{{/link-to}}
+				{{#link-to 'about'}}<li>About</li>{{/link-to}}
 			</ul>
 		</nav>
 	</header>

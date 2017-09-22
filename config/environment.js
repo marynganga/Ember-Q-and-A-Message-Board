@@ -18,6 +18,14 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: "AIzaSyA0fPkLpHDvokr6BlaffWxvvfi68rPgK1g",
+      authDomain: "ember-q-a-message-board.firebaseapp.com",
+      databaseURL: "https://ember-q-a-message-board.firebaseio.com",
+      projectId: "ember-q-a-message-board",
+      storageBucket: "",
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

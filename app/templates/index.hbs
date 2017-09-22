@@ -1,7 +1,10 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8">
-			<p>nhldfksjfd</p>
+			
+			{{#each model.questions as |question|}}
+				{{questions-list question=question}}
+			{{/each}}
 		</div>
 		<div class="col-md-4">
 			<p>chdsklhjsjdsb</p>

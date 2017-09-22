@@ -1,1 +1,8 @@
-{{outlet}}
+<div class="well">
+<button {{action 'goBack'}} class="btn-sm btn-info">&larr; Back</button>
+</div>
+<div class="well">
+	<p>Question: {{model.content}}</p>
+	<p>Additional Notes:{{model.notes}}</p>
+	<p>Asked by:{{model.author}}</p>
+</div>

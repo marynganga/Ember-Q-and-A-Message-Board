@@ -14,9 +14,9 @@ export default Ember.Component.extend({
 		},
 		saveQuestion(){
 			var params = {
-				author: this.get('author')?this.get('author'):"",
-				content: this.get('content')?this.get('content'):"",
-				notes: this.get('notes')?this.get('notes'):"",
+				author: this.get('author')?this.get('author'):"Anonymous",
+				content: this.get('content')?this.get('content'):"No question added.",
+				notes: this.get('notes')?this.get('notes'):"No additional notes.",
 			};
 			this.set("newQuestionForm",false);
 			this.sendAction('saveQuestion', params);

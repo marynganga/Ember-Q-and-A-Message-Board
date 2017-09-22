@@ -7,9 +7,27 @@ export default Ember.Route.extend({
 	actions: {
 		goBack(){
 			this.transitionTo('index');
-		}
+		},
+		updateQuestion(question,params){
+			Object.keys(params).forEach(function(key) {
+				if(params[key]!==undefined){
+					question.set(key,params[key]);
+				}
+			});			
+			question.save();
+			this.transitionTo('question',question);
+		},
+
+		deleteQuestion(model) {
+			if(confirm('Are you sure you want to delete this post?')){
+				model.destroyRecord();
+				this.transitionTo('index');
+			}
+			
+		},
 	}
 });
+
 
 
 

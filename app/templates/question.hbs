@@ -5,4 +5,9 @@
 	<p>Question: {{model.content}}</p>
 	<p>Additional Notes:{{model.notes}}</p>
 	<p>Asked by:{{model.author}}</p>
+	<div class="well">
+		{{update-question question=model updateQuestion='updateQuestion'}}
+		<button {{action 'deleteQuestion' model}} class="btn-sm btn-danger">Delete</button>
+
+	</div>
 </div>

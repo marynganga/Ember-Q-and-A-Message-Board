@@ -1,0 +1,7 @@
+<p>Author: {{question.author}}</p>
+<p>Content: {{question.content}}</p>
+<p>Notes: {{question.notes}}</p>
+<div class="well">
+	{{update-question updateQuestion='updateQuestion' question=question}}
+	<button {{action 'deleteQuestion' question}} class="btn-info btn-sm">Delete</button>
+</div>

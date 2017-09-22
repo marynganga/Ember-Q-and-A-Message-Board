@@ -8,6 +8,11 @@ export default Ember.Component.extend({
 		},
 		closeQuestionForm(){
 			this.set('updateQuestionForm', false);
+			this.set('content', "");
+			this.set('author', "");
+			this.set('notes', "");
+
+
 		},
 		updateQuestion(question){
 			var params = {

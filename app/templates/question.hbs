@@ -2,12 +2,11 @@
 <button {{action 'goBack'}} class="btn-sm btn-info">&larr; Back</button>
 </div>
 <div class="well">
-	<p>Question: {{model.content}}</p>
-	<p>Additional Notes:{{model.notes}}</p>
-	<p>Asked by:{{model.author}}</p>
-	<div class="well">
-		{{update-question question=model updateQuestion='updateQuestion'}}
-		<button {{action 'deleteQuestion' model}} class="btn-sm btn-danger">Delete</button>
-
-	</div>
+	<h3>Question</h3>
+	{{question-info question=model updateQuestion='updateQuestion' deleteQuestion='deleteQuestion'}}
 </div>
+<div class="well">
+	<h3>Answers</h3>
+	{{add-answer saveAnswer='saveAnswer' answer=answer}}
+</div>
+

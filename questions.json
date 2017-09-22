@@ -1,25 +1,20 @@
 {
-	"questions": [
-		{
+	"questions": [{
 			"author": "James Jones",
 			"content" : "How do you generate a model?",
 			"notes": "I'm new to Ember, so answer in simple terms."
-		},
-		{
+		},{
 			"author": "Mary ",
 			"content" : "How do you generate a route?",
 			"notes": "I'm using the ember cli v2.15.1."
-		}
-
-	],
-	"answers":[
-		{
+	}],
+	"answers":[{
 			"author": "Jesse Lebowitz",
-			"content": "You generate a model by typing ember g model <name-of-model> in your terminal."
-		},
-		{
+			"content": "You generate a model by typing ember g model (name-of-model) in your terminal."
+		},{
 			"author": "Lenny Mike",
-			"content": "You generate a route by typing ember g route <name-of-model> in your terminal."
-		}
-	]
+			"content": "You generate a route by typing ember g route (name-of-model) in your terminal."
+	}]
 }
+
+

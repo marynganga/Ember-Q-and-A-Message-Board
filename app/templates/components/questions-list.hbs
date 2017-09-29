@@ -2,10 +2,12 @@
 
 	<div class="questionBox">
 		<img src="images/icons8-Question-64.png" alt="User Image">
-		{{#link-to 'question' question.id}}
-			<p class="panel-body">{{question.content}}</p>
-		{{/link-to}}
-		<p class="panel-footer">by: {{question.author}}</p>
+		<div class="content">
+			<p class="author"><span>{{question.author}}</span> asks</p>
+			{{#link-to 'question' question.id}}
+				<p class="questionContent">{{question.content}}</p>
+			{{/link-to}}
+		</div>
 	</div>
 
 </div>

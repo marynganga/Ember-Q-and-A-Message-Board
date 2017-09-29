@@ -47,6 +47,17 @@ nav ul li:hover{
 	border: 0.5px solid #ddd;
 	background-color: white;
 	box-shadow: 2px 2px 5px lightgrey;
+	padding: 5px;
+}
+.author{
+	border-bottom: 1px solid lightgrey;
+}
+.author span{
+	font-weight: bold;
+	font-family: 'Cinzel Decorative', cursive;
+}
+.questionContent{
+	padding-left: 30px;
 }
 
 /*Styles for the website footer*/

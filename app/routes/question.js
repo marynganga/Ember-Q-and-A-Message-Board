@@ -20,10 +20,14 @@ export default Ember.Route.extend({
 
 		deleteQuestion(model) {
 			if(confirm('Are you sure you want to delete this question?')){
-				model.destroyRecord();
+				var answerDeletions = model.get('answers').map(function(answer){
+					return answer.destroyRecord();
+				});
+				Ember.RSVP.all(answerDeletions).then(function(){
+					return model.destroyRecord();
+				})
 				this.transitionTo('index');
 			}
-			
 		},
 		saveAnswer(params){
 			var newAnswer = this.store.createRecord('answer', params);

@@ -5,6 +5,9 @@ export default Ember.Component.extend({
 	actions:{
 		addQuestionClicked(){
 			this.set('newQuestionForm', true);
+			this.set('author', "");
+			this.set('content', "");
+			this.set('notes', "");
 		},
 		closeQuestionForm(){
 			this.set('newQuestionForm', false);
@@ -20,7 +23,6 @@ export default Ember.Component.extend({
 			};
 			this.set("newQuestionForm",false);
 			this.sendAction('saveQuestion', params);
-			console.log(params)
 		}
 	}
 });

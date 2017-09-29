@@ -1,25 +1,30 @@
 /*General Styles for the whole site*/
 .container-fluid{
 	padding:0px;
+	font-family: 'PT Sans Caption', sans-serif;
 }
-.jumbotron{
+/*Styles for the website heading*/
+.container-fluid .jumbotron{
 	border-radius: 0px;
 	background-color: MediumSeaGreen;
 	color: black; 
 	box-shadow: 0px 2px 2px lightgrey;
-	padding: 2px;
-	
+	padding: 5px;
+	font-family: 'Cinzel Decorative', cursive;
  }
- .logo{
+.logo{
  	display: inline-block;
+ 	
  }
+.logo h2{
+	font-weight: bolder;
+}
 .logo img{
-	width: 125px;
+	width: 140px;
 	height: 75px;
 	padding-right: 15px;
 }
 nav{
-	/*background-color: #ccc;*/
 	margin-top:40px;
 	display: inline-block;
 	float: right;
@@ -31,7 +36,6 @@ nav ul li{
 	list-style-type: none;
 	font-size: 18px;
 	padding: 5px;
-	/*border-right: 1px solid grey;*/
 	color: white;
 }
 nav ul li:hover{

@@ -1,0 +1,46 @@
+/*General Styles for the whole site*/
+.container-fluid{
+	padding:0px;
+}
+.jumbotron{
+	border-radius: 0px;
+	background-color: MediumSeaGreen;
+	color: black; 
+	box-shadow: 0px 2px 2px lightgrey;
+	padding: 2px;
+	
+ }
+ .logo{
+ 	display: inline-block;
+ }
+.logo img{
+	width: 125px;
+	height: 75px;
+	padding-right: 15px;
+}
+nav{
+	/*background-color: #ccc;*/
+	margin-top:40px;
+	display: inline-block;
+	float: right;
+	vertical-align: middle;
+
+}
+nav ul li{
+	display: inline-block;
+	list-style-type: none;
+	font-size: 18px;
+	padding: 5px;
+	/*border-right: 1px solid grey;*/
+	color: white;
+}
+nav ul li:hover{
+	color: black;
+}
+
+.questionBox{
+	display: flex;
+	border: 0.5px solid #ddd;
+	background-color: white;
+	box-shadow: 2px 2px 5px grey;
+}

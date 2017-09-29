@@ -1,6 +1,11 @@
 <div class="panel panel-default">
-{{#link-to 'question' question.id}}
-	<p class="panel-body">{{question.content}}</p>
-	<p class="panel-footer">by: {{question.author}}</p>
-{{/link-to}}
+
+	<div class="questionBox">
+		<img src="images/icons8-Question-64.png" alt="User Image">
+		{{#link-to 'question' question.id}}
+			<p class="panel-body">{{question.content}}</p>
+		{{/link-to}}
+		<p class="panel-footer">by: {{question.author}}</p>
+	</div>
+
 </div>

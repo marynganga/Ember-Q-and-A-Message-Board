@@ -23,7 +23,7 @@ export default Ember.Component.extend({
 			};
 			this.set("newAnswerForm",false);
 			this.sendAction('saveAnswer', params);
-			console.log(params)
+			// console.log(params)
 		}
 	}
 });

@@ -22,7 +22,7 @@ export default Ember.Component.extend({
 			};
 			this.set("updateQuestionForm",false);
 			this.sendAction('updateQuestion',question, params);
-			console.log(params)
+			// console.log(params)
 		}
 	}
 });

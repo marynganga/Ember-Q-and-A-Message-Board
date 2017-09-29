@@ -5,6 +5,9 @@ export default Ember.Component.extend({
 	actions:{
 		addAnswerClicked(){
 			this.set('newAnswerForm', true);
+			this.set('author', "");
+			this.set('content', "");
+			this.set('notes', "");
 		},
 		closeAnswerForm(){
 			this.set('newAnswerForm', false);
@@ -16,6 +19,7 @@ export default Ember.Component.extend({
 			var params = {
 				author: this.get('author')?this.get('author'):"Anonymous",
 				content: this.get('content')?this.get('content'):"No answer added.",
+				question: this.get('question')
 			};
 			this.set("newAnswerForm",false);
 			this.sendAction('saveAnswer', params);

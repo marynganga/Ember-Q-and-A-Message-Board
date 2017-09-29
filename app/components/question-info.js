@@ -8,6 +8,10 @@ export default Ember.Component.extend({
 		deleteQuestion(question){
 			this.sendAction('deleteQuestion',question);
 
+		},
+		deleteAnswer(answer){
+			this.sendAction('deleteAnswer',answer);
+
 		}
 	}
 });

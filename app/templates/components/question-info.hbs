@@ -5,3 +5,12 @@
 	{{update-question updateQuestion='updateQuestion' question=question}}
 	<button {{action 'deleteQuestion' question}} class="btn-info btn-sm">Delete</button>
 </div>
+<div class="well">
+	<h3>Answers</h3>
+	<ul>
+		{{#each question.answers as |answer|}}
+			{{answers-list answer=answer deleteAnswer='deleteAnswer'}}
+		{{/each}}
+	</ul>
+</div>
+

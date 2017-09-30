@@ -3,13 +3,18 @@
 	padding:0px;
 	font-family: 'PT Sans Caption', sans-serif;
 	overflow-x: hidden;
+	font-size: 17px;
+}
+h1,h2,h3,h4,h5{
+	font-weight: bold;
+	font-family: 'Cinzel Decorative', cursive;
 }
 /*Styles for the website heading*/
 .container-fluid .jumbotron{
 	border-radius: 0px;
 	background-color: MediumSeaGreen;
 	color: black; 
-	box-shadow: 0px 2px 10px grey;
+	box-shadow: 0px 5px 20px grey;
 	padding: 5px;
 	font-family: 'Cinzel Decorative', cursive;
  }
@@ -52,8 +57,9 @@ nav ul li:hover{
 	display: flex;
 	border: 0.5px solid #ddd;
 	background-color: white;
-	box-shadow: 2px 2px 5px lightgrey;
+	box-shadow: 5px 5px 5px lightgrey;
 	padding: 5px;
+	margin-bottom: 15px;
 }
 .author{
 	border-bottom: 1px solid lightgrey;
@@ -69,9 +75,10 @@ nav ul li:hover{
 .ask{
 	position: relative;
 	border: 2px solid #ddd;
-	box-shadow: 0px 0px 5px lightgrey;
+	box-shadow: 0px 0px 20px grey;
 	text-align: center;
-	padding: 10px;
+	padding: 70px 10px;
+	height: 50vh;
 }
 .button{
 	background-color: transparent;
@@ -112,4 +119,15 @@ footer{
     margin-top: 15px;
     box-shadow: 0px 0px 15px grey;
     margin-bottom: 0px;
+}
+
+
+/*Styles for the About and Contacts Pages*/
+.contact, .about{
+	position: relative;
+	border: 2px solid #ddd;
+	box-shadow: 0px 0px 20px grey;
+	text-align: center;
+	padding: 70px 10px;
+	margin: 20px;
 }

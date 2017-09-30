@@ -1,8 +1,25 @@
-# q-and-a-board
+# EMBER Q&A MESSAGE BOARD
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Description
+ This is a message board that connects users of Ember.js, allowing them to ask questions and receive answers, 22/09/2017.
+ 
+ ### Features
 
+* Users can post questions.
+* They can edit or delete a question once posted.
+* Users can answer posted questions.
+
+
+## Built by
+  [Mary Ng'ang'a](https://github.com/marynganga)
+  
+## Technologies Used
+
+ * HTML
+ * CSS
+ * BOOTSTRAP
+ * EMBER
+ 
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -12,11 +29,13 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
 
+
 ## Installation
 
 * `git clone <repository-url>` this repository
 * `cd q-and-a-board`
 * `npm install`
+* `bower install`
 
 ## Running / Development
 
@@ -48,3 +67,6 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+## License
+MIT &copy;2017 [Mary Ng'ang'a](https://github.com/marynganga)

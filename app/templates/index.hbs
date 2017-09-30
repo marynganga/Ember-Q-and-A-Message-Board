@@ -1,13 +1,16 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8">
-
 			{{#each model.questions as |question|}}
 				{{questions-list question=question}}
 			{{/each}}
 		</div>
 		<div class="col-md-4">
-			{{new-question saveQuestion='saveQuestion'}}
+			<div class="ask">
+				<p>Ask all your questions about using Ember and let the message board community school you.</p>
+				{{new-question saveQuestion='saveQuestion'}}
+				<img src="images/img1.jpg" class="emberLogo">
+			</div>
 		</div>
 
 	</div>

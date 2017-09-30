@@ -2,6 +2,7 @@
 .container-fluid{
 	padding:0px;
 	font-family: 'PT Sans Caption', sans-serif;
+	overflow-x: hidden;
 }
 /*Styles for the website heading*/
 .container-fluid .jumbotron{
@@ -41,6 +42,11 @@ nav ul li{
 nav ul li:hover{
 	color: black;
 }
+/*Styles for the Main Section*/
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
 /*Styles for the questions list*/
 .questionBox{
 	display: flex;
@@ -59,6 +65,43 @@ nav ul li:hover{
 .questionContent{
 	padding-left: 30px;
 }
+/*Styles for the Ask a question section*/
+.ask{
+	position: relative;
+	border: 2px solid #ddd;
+	box-shadow: 0px 0px 5px lightgrey;
+	text-align: center;
+	padding: 10px;
+}
+.button{
+	background-color: transparent;
+	margin: 10px;
+	border: 2px solid grey;
+	box-shadow: 0px 0px 5px MediumSeaGreen;
+	border-radius: 4px;
+}
+.button:hover{
+	box-shadow: 0px 0px 10px black;
+
+}
+.emberLogo{
+	width: 70%;
+}
+/*Styles for the add a question form*/
+.formSection{
+	padding: 20px;
+}
+.formSection img{
+	width: 80px;
+}
+.saveButton{
+	float: left;
+	margin-left: 20px;
+}
+.closeButton{
+	float: right;
+    margin-right: 20px;
+}
 
 /*Styles for the website footer*/
 footer{
@@ -68,4 +111,5 @@ footer{
     text-align: center;
     margin-top: 15px;
     box-shadow: 0px 0px 15px grey;
+    margin-bottom: 0px;
 }

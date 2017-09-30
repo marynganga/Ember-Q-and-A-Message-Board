@@ -1,11 +1,12 @@
-<div class="well">
-<button {{action 'goBack'}} class="btn-sm btn-info">&larr; Back</button>
-</div>
-<div class="well">
-	<h3>Question</h3>
-	{{question-info question=model updateQuestion='updateQuestion' deleteQuestion='deleteQuestion' deleteAnswer='deleteAnswer'}}
-</div>
-<div class="well">
+
+<button {{action 'goBack'}} class="btn btn-success backButton"><img src="images/icons8-Back Arrow Filled-50.png" alt="&larr; Back"></button>
+
+<div class="questionDisplay">
 	{{add-answer saveAnswer='saveAnswer' question=model}}
 </div>
+
+<div class="questionDisplay">
+	{{question-info question=model updateQuestion='updateQuestion' deleteQuestion='deleteQuestion' deleteAnswer='deleteAnswer'}}
+</div>
+
 

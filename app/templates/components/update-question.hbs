@@ -1,26 +1,28 @@
 {{#if updateQuestionForm}}
-	<h2> Update Question</h2>
-	<form>
-		<div class="form-group">
-			<label for="content">Question:</label>
-			{{input type="text" value=content class="form-control" id="content" placeholder=question.content}}
-		</div>
+	<div class="updateQForm">
+		<h2> Update Question</h2>
+		<form>
+			<div class="form-group">
+				<label for="content">Question:</label>
+				{{input type="text" value=content class="form-control" id="content" placeholder=question.content}}
+			</div>
 
-		<div class="form-group">
-			<label for="author">Author:</label>
-			{{input type="text" value=author class="form-control" id="author" placeholder=question.author}}
-		</div>
+			<div class="form-group">
+				<label for="author">Author:</label>
+				{{input type="text" value=author class="form-control" id="author" placeholder=question.author}}
+			</div>
 
-		<div class="form-group">
-			<label for="notes">Additional Notes:</label>
-			{{textarea value=notes class="form-control" id="notes" placeholder=question.notes}}
-		</div>
-		<button {{action 'updateQuestion' question}} class="btn-sm btn-info">Update</button>
-		<button {{action 'closeQuestionForm'}} class="btn-sm btn-danger">Close</button>
+			<div class="form-group">
+				<label for="notes">Additional Notes:</label>
+				{{textarea value=notes class="form-control" id="notes" placeholder=question.notes}}
+			</div>
+			<button {{action 'updateQuestion' question}} class="btn-sm btn-success">Update</button>
+			<button {{action 'closeQuestionForm'}} class="btn-sm btn-danger">Close</button>
 
-	</form>
+		</form>
+	</div>
 {{else}}
-	<button {{action 'updateQuestionClicked'}} class="btn-sm btn-info">Update</button>
+	<button {{action 'updateQuestionClicked'}} class="btn-sm btn-success updateButton">Update</button>
 
 {{/if}}
 

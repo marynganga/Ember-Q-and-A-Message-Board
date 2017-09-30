@@ -1,6 +1,10 @@
 <li>
-	{{answer.content}}- by - {{answer.author}}
+	<div class="content">
+		<div class="answerContent">{{answer.content}}</div>
+		
+		<div class="answerAuthor">answered by <span>{{answer.author}}</span></div>
 
-	<button {{action 'deleteAnswer' answer}} class="btn-sm btn-danger">Delete</button>
+		<button {{action 'deleteAnswer' answer}} class="btn-sm btn-danger delAnswer">Delete</button>
 
+	</div>
 </li>

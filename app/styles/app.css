@@ -9,6 +9,7 @@ h1,h2,h3,h4,h5{
 	font-weight: bold;
 	font-family: 'Cinzel Decorative', cursive;
 }
+/*Styles for the Website template at application.hbs*/
 /*Styles for the website heading*/
 .container-fluid .jumbotron{
 	border-radius: 0px;
@@ -47,7 +48,17 @@ nav ul li{
 nav ul li:hover{
 	color: black;
 }
-/*Styles for the Main Section*/
+/*Styles for the website footer*/
+footer{
+	background-color: #9a9999;
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+    box-shadow: 0px 0px 15px grey;
+    margin-bottom: 0px;
+}
+/*Styles for the Home/Index Page*/
 .row {
     margin-right: 0px;
     margin-left: 0px;
@@ -110,19 +121,7 @@ nav ul li:hover{
     margin-right: 20px;
 }
 
-/*Styles for the website footer*/
-footer{
-	background-color: #9a9999;
-    padding: 20px;
-    font-size: 15px;
-    text-align: center;
-    margin-top: 15px;
-    box-shadow: 0px 0px 15px grey;
-    margin-bottom: 0px;
-}
-
-
-/*Styles for the About and Contacts Pages*/
+/*Styles for the About and Contact Pages*/
 .contact, .about{
 	position: relative;
 	border: 2px solid #ddd;
@@ -130,4 +129,65 @@ footer{
 	text-align: center;
 	padding: 70px 10px;
 	margin: 20px;
+}
+/* Styles for the Question Page*/
+.backButton{
+	margin-left: 20px;
+}
+.questionDisplay{
+	position: relative;
+	border: 2px solid #ddd;
+	box-shadow: 0px 0px 20px grey;
+	/*text-align: center;*/
+	padding: 20px;
+	margin: 20px;
+}
+.questionNotes{
+	border-top: 1px solid lightgrey;
+	padding-left: 30px;
+	padding-top: 5px;
+
+}
+.updateQuestionSection .updateButton{
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+}
+.updateQuestionSection .delButton{
+	display: inline-block;
+	float:right;
+}
+.updateQForm{
+	border: 2px solid lightgrey;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.answerList ul li{
+	list-style-type: none;
+	border: 1px solid lightgrey;
+	margin: 5px;
+	
+}
+.answerList ul li .content{
+	margin: 5px;
+	padding: 30px;
+
+}
+
+.answerContent{
+	border-bottom: 2px solid lightgrey;
+}
+.delAnswer{
+	float: right;
+	padding-top: 5px;
+
+}
+.answerAuthor{
+	padding-top: 5px;
+	float: left;
+}
+.answerAuthor span{
+	font-weight: bold;
+	font-family: 'Cinzel Decorative', cursive;
+
 }

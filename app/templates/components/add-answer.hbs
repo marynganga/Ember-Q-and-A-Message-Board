@@ -11,12 +11,12 @@
 			{{input type="text" value=author class="form-control" id="author"}}
 		</div>
 
-		<button {{action 'saveAnswer'}} class="btn-sm btn-info">Save</button>
-		<button {{action 'closeAnswerForm'}} class="btn-sm btn-danger">Close</button>
+		<button {{action 'saveAnswer'}} class="btn btn-success">Save</button>
+		<button {{action 'closeAnswerForm'}} class="btn btn-danger">Close</button>
 
 	</form>
 {{else}}
 
-		<button {{action 'addAnswerClicked'}} class="btn-sm btn-info">Add answer</button>
+		<button {{action 'addAnswerClicked'}} class="btn btn-success">Add answer</button>
 {{/if}}
 

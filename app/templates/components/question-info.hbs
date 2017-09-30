@@ -1,11 +1,19 @@
-<p>Author: {{question.author}}</p>
-<p>Content: {{question.content}}</p>
-<p>Notes: {{question.notes}}</p>
-<div class="well">
-	{{update-question updateQuestion='updateQuestion' question=question}}
-	<button {{action 'deleteQuestion' question}} class="btn-info btn-sm">Delete</button>
+<div class="row">
+	<div class="col-md-8">
+		<h3>Question</h3>
+		<img src="images/icons8-Question-64.png" alt="">
+		<div class="content">
+			<p class="author"><span>{{question.author}}</span> asks</p>
+			<p class="questionContent">{{question.content}}</p>
+			<p class="questionNotes">Additional Notes: {{question.notes}}</p>
+		</div>
+	</div>
+	<div class="col-md-4 updateQuestionSection">
+		{{update-question updateQuestion='updateQuestion' question=question}}
+		<button {{action 'deleteQuestion' question}} class="btn-danger btn delButton">Delete</button>
+	</div>
 </div>
-<div class="well">
+<div class="questionDisplay answerList">
 	<h3>Answers</h3>
 	<ul>
 		{{#each question.answers as |answer|}}

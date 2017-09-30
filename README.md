@@ -10,8 +10,7 @@
 * Users can answer posted questions.
 
 
-## Built by
-  [Mary Ng'ang'a](https://github.com/marynganga)
+## Built by [Mary Ng'ang'a](https://github.com/marynganga)
   
 ## Technologies Used
 
@@ -32,7 +31,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/marynganga/Ember-Q-and-A-Message-Board/ `
 * `cd q-and-a-board`
 * `npm install`
 * `bower install`

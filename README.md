@@ -43,7 +43,7 @@ You will need the following things properly installed on your computer.
 
 ### Code Generators
 
-Make use of the many generators for code, try `ember help generate` for more details
+* Make use of the many generators for code, try `ember help generate` for more details.
 
 ### Running Tests
 
@@ -57,7 +57,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+* To deploy the application, follow the instruction provided at https://firebase.google.com/docs/hosting/deploying or alternatively https://medium.com/google-cloud/google-firebase-can-host-your-website-and-single-page-application-4e9c9e0c6a95.
 
 ## Further Reading / Useful Links
 
